@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family:'Julius Sans One', sans-serif;
+}
+
+
+/*---------Navigation---------*/
+
+.hero__navigation{
+    position: absolute;
+    top: 3vh;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.hero__logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10vw;
+    cursor: pointer;
+}
+.hero__navigation ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.hero__navigation ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #FF8A33;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.hero__navigation ul li:hover::after{
+    width: 100%;
+    
+}
+.hero__navigation ul li a{
+    text-decoration: none;
+    color:#FF8A33;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2.3vh;
+    letter-spacing: 2px;
+}
+.hero__signIn{
+    text-decoration: none;
+    color:#FF8A33;   
+    font-size: 1vw;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+/*--------Jumbotron----------*/
+
+.hero__jumbotron{
+    width: 100%;
+    height: 60vh;
+    z-index: 2;
+}
+#myVideo{
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 60vh;
+    z-index: -5;
+}
+.hero__subscribe{
+    margin-top: -14vh;
+    text-align: center;
+    font-size: 1.3vw;
+    color: #FF8A33;
+    font-weight: bolder;
+}
+input{
+    height: 3.3vh;
+    width: 13vw;
+    border:3px solid #FF8A33;
+    opacity: 0.5;
+}
+
+
+
+/*---------Catalog---------*/
+
+.catalog{
+    background-color: #494f52;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.catalog__container{
+    padding-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10vw 2.5vw auto 100px;
+    row-gap: 2vh;
+    justify-items: center;
+}
+.catalog__header{
+    grid-column: 1 / span 4;
+    font-size: 3vw;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    align-self: center;
+    color: #d5d2df;
+    padding: 5vw;
+    align-self: center;
+    font-family: sans-serif;
+}
+.catalog__title{
+    font-size: 1.3vw;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: #FF8A33;
+    font-family: 'Julius Sans One', sans-serif;
+    text-shadow: 1px 1px 2px #fa0a0a;
+}
+.catalog__container img{
+    width: 23vw;
+    height: 33vh;
+    border-radius: 5%;
+    box-shadow: .5rem .5rem 1em;
+}
+.catalog__description{
+    width: 23vw;
+    color: #d5d2df;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 1vw;
+}
+
+
+/*--------Membership Seccion---------*/
+
+.membership{
+    display: flex;
+    justify-content: center;
+    height:130vh;
+    background-image: url('./assets/images/brick.jpg');   
+}
+#memberships{
+    text-align: center;
+    position: absolute;
+    padding: 5vh;
+    font-size: 7vh;
+    font-weight: bolder;
+    color: #d5d2df;
+    font-family: sans-serif;
+}
+.membership__container{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.plan{
+    border:1px solid #FF8A33;
+    width: 30vw;
+    background-color: #d5d2df;
+    height:90vh;
+    border-radius: 20px;
+    color: #FF8A33;
+    background-color: #494f52;
+    box-shadow: .5rem .5rem 1em black;
+}
+.plan h1{
+    text-align: center;
+    padding: 3vh;
+    font-size: 4vw;
+    font-family: fantasy;
+    letter-spacing: 4px;
+    color: #d5d2df;
+    font-weight: 100;
+}
+.plan hr{
+    padding:0;
+    width: 20vw;
+    margin: 2vh;
+}
+.plan p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2vh;
+    font-weight: 100;
+    color: #d5d2df;
+}
+.plan h2{
+    text-align: center;
+    padding: 3vh;
+    font-family: sans-serif;
+    font-size: 5vh;
+    color: #FF8A33;
+}
+.plan h3{
+    margin-left: 5vw;
+    color: #d5d2df;
+    font-size: 1vw;
+}
+.plan img{
+    width: 3vh;
+}
+.plan li{
+    font-size: 1vw;
+    color: #FF8A33;
+}
+.plan ul{
+    list-style: none;
+}
+button{
+    margin: 5vh;
+    width: 15vw;
+    height: 6vh;
+    color: #FF8A33;
+    font-weight: bolder;
+}
+button:hover{
+    background-color: #FF8A33;
+    color: #d5d2df;
+}
+
+/*--------Footer---------*/
+
+footer{
+    height: 35vh;
+    width: 100%;
+    background-color:black ;
+
+}
+footer a{
+    text-decoration: none;
+    color: #d5d2df;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer a:hover{
+    color: #FF8A33;
+}
+footer ul{
+    list-style: none;
+}
+.footer__container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 7vh;
+}
+footer p{
+    text-align: center;
+    margin-top: 6vh;
+    font-size: 1.5vh;
+    color: #FF8A33;
+}
+footer li{
+    padding: 5px;
+    color: #FF8A33;
+    font-weight: bolder;
+    font-size: 1vw;
+}
+footer img{
+   width: 1.5vw; 
+}
+
+/*-----button------*/
+
+button{
+    color: #d5d2df;
+    cursor: pointer;
+    padding: 1vh;
+    width: 11vw;
+    font-size: 2vh;
+    font-weight: bolder;
+    border-radius: 25px;
+    background-color: transparent;
+    border:2px solid #FF8A33; 
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/*--------scrollbar---------*/
+
+html::-webkit-scrollbar{
+    width: 0.7vw;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #FF8A33;
+    border-radius: 20px;
+}
+html::-webkit-scrollbar-track{
+    background-color: #000000;
+}
