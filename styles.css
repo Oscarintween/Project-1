@@ -61,6 +61,29 @@
     font-weight: bold;
     letter-spacing: 2px;
 }
+#menu{
+    display: none;
+}
+#menu img{
+    width: 6vw;
+    position: absolute;
+    right: 2vw;
+}
+@media (max-width: 1000px) {
+    #menu {
+      display: block;
+    }
+  }
+  @media (max-width: 1000px) {
+    .hero__navigation ul li {
+      display: none;
+    }
+  }
+  @media (max-width: 1000px){
+    .hero__signIn{
+        display: none;
+    }
+  }
 /*--------Jumbotron----------*/
 
 .hero__jumbotron{
