@@ -23,7 +23,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 10vw;
+    width: 12vw;
     cursor: pointer;
 }
 .hero__navigation ul li{
@@ -54,36 +54,51 @@
     font-size: 2.3vh;
     letter-spacing: 2px;
 }
-.hero__signIn{
-    text-decoration: none;
-    color:#FF8A33;   
-    font-size: 1vw;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-#menu{
-    display: none;
-}
-#menu img{
+.menu{
     width: 6vw;
     position: absolute;
-    right: 2vw;
+    left: 2vw;
 }
+label{
+    display: none;
+}
+#hero__dropDown li{
+    margin-top: 15px !important;
+}
+
+      
 @media (max-width: 1000px) {
-    #menu {
+    label {
       display: block;
+
     }
   }
-  @media (max-width: 1000px) {
-    .hero__navigation ul li {
+@media (max-width: 1000px) {
+    .hero__navigation ul{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 12vh;
+      left: 0;
       display: none;
+    }
+    .hero__navigation li{
+        padding-top: 5px;
     }
   }
   @media (max-width: 1000px){
-    .hero__signIn{
-        display: none;
+      .hero__logo{
+        margin-left: 90vw; 
     }
   }
+  @media (max-width:1000px){
+  #checkMenu:checked ~ .hero__dropDown {
+    display: block;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    }
+}
 /*--------Jumbotron----------*/
 
 .hero__jumbotron{
