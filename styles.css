@@ -125,7 +125,7 @@ label{
     font-weight: bolder;
 }
 input{
-    height: 3.3vh;
+    height: 2vw;
     width: 13vw;
     border:3px solid #FF8A33;
     opacity: 0.5;
