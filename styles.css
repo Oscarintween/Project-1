@@ -65,6 +65,9 @@ label{
 #hero__dropDown li{
     margin-top: 15px !important;
 }
+#checkMenu{
+    display: none;
+}
 
       
 @media (max-width: 1000px) {
@@ -83,7 +86,7 @@ label{
       display: none;
     }
     .hero__navigation li{
-        padding-top: 5px;
+        padding-top: 2vh;
     }
   }
   @media (max-width: 1000px){
@@ -167,7 +170,7 @@ input{
 }
 .catalog__container img{
     width: 23vw;
-    height: 33vh;
+    height: 16vw;
     border-radius: 5%;
     box-shadow: .5rem .5rem 1em;
 }
@@ -178,21 +181,36 @@ input{
     letter-spacing: 2px;
     font-size: 1vw;
 }
-
+@media (max-width:1400px){
+    .catalog{
+        height:70vh
+    }
+}
+@media (max-width:800px){
+    .catalog{
+        height:50vh
+    }
+}
+@media (max-width:450px){
+    .catalog{
+        height:35vh;
+    }
+    
+}
 
 /*--------Membership Seccion---------*/
 
 .membership{
     display: flex;
     justify-content: center;
-    height:130vh;
+    height:80vw;
     background-image: url('./assets/images/brick.jpg');   
 }
 #memberships{
     text-align: center;
     position: absolute;
-    padding: 5vh;
-    font-size: 7vh;
+    padding: 5vw;
+    font-size: 3vw;
     font-weight: bolder;
     color: #d5d2df;
     font-family: sans-serif;
@@ -202,12 +220,13 @@ input{
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    margin-top: 1vw;
 }
 .plan{
     border:1px solid #FF8A33;
     width: 30vw;
     background-color: #d5d2df;
-    height:90vh;
+    height:50vw;
     border-radius: 20px;
     color: #FF8A33;
     background-color: #494f52;
@@ -215,7 +234,7 @@ input{
 }
 .plan h1{
     text-align: center;
-    padding: 3vh;
+    padding: 1.5vw;
     font-size: 4vw;
     font-family: fantasy;
     letter-spacing: 4px;
@@ -225,20 +244,20 @@ input{
 .plan hr{
     padding:0;
     width: 20vw;
-    margin: 2vh;
+    margin: 1vw;
 }
 .plan p{
     text-align: center;
     font-family: sans-serif;
-    font-size: 2vh;
+    font-size: 1.8vw;
     font-weight: 100;
     color: #d5d2df;
 }
 .plan h2{
     text-align: center;
-    padding: 3vh;
+    padding: 2vw;
     font-family: sans-serif;
-    font-size: 5vh;
+    font-size: 4vw;
     color: #FF8A33;
 }
 .plan h3{
@@ -247,7 +266,7 @@ input{
     font-size: 1vw;
 }
 .plan img{
-    width: 3vh;
+    width: 1vw;
 }
 .plan li{
     font-size: 1vw;
@@ -255,17 +274,6 @@ input{
 }
 .plan ul{
     list-style: none;
-}
-button{
-    margin: 5vh;
-    width: 15vw;
-    height: 6vh;
-    color: #FF8A33;
-    font-weight: bolder;
-}
-button:hover{
-    background-color: #FF8A33;
-    color: #d5d2df;
 }
 
 /*--------Footer---------*/
@@ -310,14 +318,15 @@ footer img{
    width: 1.5vw; 
 }
 
-/*-----button------*/
+/*-----buttons------*/
 
 button{
+    margin:2vw;
     color: #d5d2df;
     cursor: pointer;
-    padding: 1vh;
+    padding: 1vw;
     width: 11vw;
-    font-size: 2vh;
+    font-size: 1vw;
     font-weight: bolder;
     border-radius: 25px;
     background-color: transparent;
@@ -325,6 +334,10 @@ button{
     text-align: center;
     overflow: hidden;
     position: relative;
+}
+button:hover{
+    background-color: #FF8A33;
+    color: #d5d2df;
 }
 
 
