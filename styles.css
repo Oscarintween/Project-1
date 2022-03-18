@@ -51,19 +51,19 @@
     color:#FF8A33;
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 2.3vh;
+    font-size: 1.8vw;
     letter-spacing: 2px;
 }
 .menu{
     width: 6vw;
     position: absolute;
-    left: 2vw;
+    left: 4vw;
 }
 label{
     display: none;
 }
 #hero__dropDown li{
-    margin-top: 15px !important;
+    margin-top: 0.8vw !important;
 }
 #checkMenu{
     display: none;
@@ -81,17 +81,16 @@ label{
       position: absolute;
       display: flex;
       flex-direction: column;
-      top: 12vh;
-      left: 0;
+      top: 10vw;
       display: none;
     }
     .hero__navigation li{
-        padding-top: 2vh;
+        padding-top: 2vw;
     }
   }
   @media (max-width: 1000px){
       .hero__logo{
-        margin-left: 90vw; 
+        margin-left: 85vw; 
     }
   }
   @media (max-width:1000px){
@@ -118,7 +117,7 @@ label{
     z-index: -5;
 }
 .hero__subscribe{
-    margin-top: -14vh;
+    margin-top: -8vw;
     text-align: center;
     font-size: 1.3vw;
     color: #FF8A33;
