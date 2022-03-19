@@ -235,10 +235,10 @@ input{
     text-align: center;
     padding: 1.5vw;
     font-size: 4vw;
-    font-family: fantasy;
+    font-family: sans-serif;
     letter-spacing: 4px;
     color: #d5d2df;
-    font-weight: 100;
+    font-weight: 800;
 }
 .plan hr{
     padding:0;
