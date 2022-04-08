@@ -132,10 +132,10 @@ label{
     flex-direction: column;
     width: 25%;
     height: 45%;
-    border: 0.2vw solid #FF8A33;
+    border: 0.15vw solid #FF8A33;
     border-radius: 7%;
     background-color: rgba(73,79,82,0.6);
-    color: #FF8A33;
+    color: #d5d2df;
 }
 
 /*store item properties*/
@@ -201,6 +201,21 @@ label{
     padding-left: 6vw;
     padding-top: 2vw;
 }
+h6{
+    color: #FF8A33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    font-weight: bolder;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    position: absolute;
+    right: 5vw;
+    top: 21vw;
+    border: 2px solid black;
+}
 .products__columns{
     display: flex;
     justify-content: space-around;
@@ -208,6 +223,7 @@ label{
     padding-bottom: 2vw;
     font-weight: bolder;
     font-size: 1.2vw;
+    letter-spacing: 0.1vw;
 }
 .products__row{
     height: 5vw;
@@ -240,6 +256,19 @@ label{
     font-size: 1.4vw;
     font-family: sans-serif;
 }
+.products__total{
+    display: flex;
+    align-items: center;
+    background-color: #FF8A33 !important;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    height: 3vw;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    letter-spacing: 0.3vw;
+    padding-left: 1vw;
+}
 
 /*--------plus and minus buttons---------*/
 
@@ -247,6 +276,7 @@ label{
     padding: 0.6vw;
     font-weight: bolder;
     color: #FF8A33;
+    cursor: grab;
 }
 
 /*--------Footer---------*/
