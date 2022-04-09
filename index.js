@@ -59,15 +59,14 @@ const products = [
       
     },
   ];
-  //---------------------------------------------------------------------------------------------
 
+//===========================================================================================
   //selected  elements from HTML
   const productItems = document.querySelector("#products__list");
   const cartItems = document.querySelector("#products__cart");
   const totalInCart = document.querySelector(".totalPrice");
   
-  //---------------------------------------------------------------------------------------------
-
+//===========================================================================================
   //function to render products
   function renderItems(){
       products.forEach((product) =>{
@@ -83,11 +82,12 @@ const products = [
       })
   }
   renderItems();
-
+//===========================================================================================
   //cart array for cart section
   let cart = JSON.parse(localStorage.getItem("CART")) || [];
   updateCart();
 
+//===========================================================================================
   //add to cart function
   function addToCart (id){
       if(cart.some((item) => item.id === id)){
@@ -102,6 +102,7 @@ const products = [
       
      updateCart(); 
   }
+//===========================================================================================
   // update cart function 
   function updateCart(){
       renderCartItems();
@@ -109,6 +110,7 @@ const products = [
       localStorage.setItem("CART",JSON.stringify(cart));
   }
 
+//===========================================================================================
 // function to render total price and items
   function renderTotal(){
       let totalPrice = 0;
@@ -123,6 +125,8 @@ const products = [
       <h6>${totalItems}</h6>
       `
   }
+
+//===========================================================================================
 // function to render items to cart
   function renderCartItems(){
     cartItems.innerHTML = "";//clears items
@@ -146,6 +150,7 @@ const products = [
       })
   }
 
+//===========================================================================================
 //function to remove items from cart
     function removeItem(id) {
        cart = cart.filter((item) => item.id !==id);       
@@ -153,7 +158,7 @@ const products = [
         updateCart();
       }
 
-
+//===========================================================================================
 // function that will change units with + and - sign
   function changeUnits(action, id) {
     cart = cart.map((item) => {
@@ -175,7 +180,12 @@ const products = [
   
     updateCart();
   }
-  function eraseAll(){
-      localStorage.clear();
+
+//===========================================================================================
+  //function that clears all local storage
+  function eraseAll(){    
+    localStorage.clear();
+    cart = [];
+    updateCart();
   }
   
