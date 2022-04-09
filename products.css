@@ -202,7 +202,7 @@ label{
     padding-top: 2vw;
 }
 h6{
-    color: #000000;
+    color: rgb(0, 206, 45);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,7 +227,7 @@ h6{
     letter-spacing: 0.1vw;
 }
 .products__row{
-    height: 7vw;
+    height: 6.5vw;
     display: flex;
     justify-content: space-evenly;
     border-bottom: 1px solid black;
@@ -272,17 +272,22 @@ h6{
     display: flex;
     align-items: center;
     background-color: #FF7F00 !important;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     font-weight: bolder;
-    height: 3vw;
+    height: 4vw;
     position: sticky;
     bottom: 0;
     left: 0;
-    letter-spacing: 0.3vw;
-    padding-left: 1vw;
     font-family: sans-serif;
     border-top: 2px solid;
     border-bottom: 2px solid;
+    padding-left: 1vw;
+}
+.deleteAll{
+    padding: 0 !important;
+    width: 3vw !important;
+    padding-left: 5vw !important;
+    cursor: grab;
 }
 
 /*--------plus and minus buttons---------*/

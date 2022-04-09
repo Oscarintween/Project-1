@@ -1,3 +1,6 @@
+
+
+// array of objects that include all of the information for each product item
 const products = [
     {
       id: 0,
@@ -56,12 +59,14 @@ const products = [
       
     },
   ];
+  //---------------------------------------------------------------------------------------------
 
-  //select elements
+  //selected  elements from HTML
   const productItems = document.querySelector("#products__list");
   const cartItems = document.querySelector("#products__cart");
   const totalInCart = document.querySelector(".totalPrice");
   
+  //---------------------------------------------------------------------------------------------
 
   //function to render products
   function renderItems(){
@@ -79,9 +84,9 @@ const products = [
   }
   renderItems();
 
-
   //cart array for cart section
-  let cart = [];
+  let cart = JSON.parse(localStorage.getItem("CART")) || [];
+  updateCart();
 
   //add to cart function
   function addToCart (id){
@@ -114,7 +119,7 @@ const products = [
           totalItems += item.numberOfUnits;
       })
       totalInCart.innerHTML =`
-      <div class="products__total"> Total : $${totalPrice.toLocaleString()}</div>
+      <div class="products__total"> Total : $${totalPrice.toLocaleString()} <img onclick="eraseAll()" class="deleteAll" src="./assets/images/deleteAll.png"> </div>
       <h6>${totalItems}</h6>
       `
   }
@@ -169,5 +174,8 @@ const products = [
     });
   
     updateCart();
+  }
+  function eraseAll(){
+      localStorage.clear();
   }
   
