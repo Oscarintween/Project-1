@@ -101,7 +101,9 @@ const products = [
   function updateCart(){
       renderCartItems();
       renderTotal();
+      localStorage.setItem("CART",JSON.stringify(cart));
   }
+
 // function to render total price and items
   function renderTotal(){
       let totalPrice = 0;
