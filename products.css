@@ -43,7 +43,7 @@
     content: '';
     height: 3px;
     width: 0;
-    background: #FF8A33;
+    background: #FF7F00;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -55,7 +55,7 @@
 }
 .hero__navigation ul li a{
     text-decoration: none;
-    color:#FF8A33;
+    color:#FF7F00;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 1.8vw;
@@ -132,7 +132,7 @@ label{
     flex-direction: column;
     width: 25%;
     height: 45%;
-    border: 0.15vw solid #FF8A33;
+    border: 0.15vw solid #FF7F00;
     border-radius: 7%;
     background-color: rgba(73,79,82,0.6);
     color: #d5d2df;
@@ -159,7 +159,7 @@ label{
     font-weight: bolder;
     align-items: center;
     justify-content: center;
-    color: #FF8A33;
+    color: #FF7F00;
     font-weight: bolder;
 }
 .productCart{
@@ -202,7 +202,7 @@ label{
     padding-top: 2vw;
 }
 h6{
-    color: #FF8A33;
+    color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,7 +214,8 @@ h6{
     position: absolute;
     right: 5vw;
     top: 21vw;
-    border: 2px solid black;
+    border: 2px solid #FF7F00;
+    font-family: sans-serif;
 }
 .products__columns{
     display: flex;
@@ -226,23 +227,34 @@ h6{
     letter-spacing: 0.1vw;
 }
 .products__row{
-    height: 5vw;
+    height: 7vw;
     display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+#products__delete{
+    width: 2vw ;
+    padding: 0;
+    cursor: grab;
+}
+.products__delete{
+    display: flex;
+    align-items: center;
 }
 .products__row__item{
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 10vw;
 }
 #itemImage{
     padding: 0 !important;
-    width: 30%;
+    width: 55%;
     height: 100%;    
 }
 .products__row__quantity{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     width: 25%;
     font-weight: bolder;
     font-size: 1.5vw;
@@ -259,7 +271,7 @@ h6{
 .products__total{
     display: flex;
     align-items: center;
-    background-color: #FF8A33 !important;
+    background-color: #FF7F00 !important;
     font-size: 1.5vw;
     font-weight: bolder;
     height: 3vw;
@@ -268,6 +280,9 @@ h6{
     left: 0;
     letter-spacing: 0.3vw;
     padding-left: 1vw;
+    font-family: sans-serif;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
 }
 
 /*--------plus and minus buttons---------*/
@@ -275,7 +290,7 @@ h6{
 .minusButton, .plusButton{
     padding: 0.6vw;
     font-weight: bolder;
-    color: #FF8A33;
+    color: #FF7F00;
     cursor: grab;
 }
 

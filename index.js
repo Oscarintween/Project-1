@@ -102,7 +102,7 @@ const products = [
       renderCartItems();
       renderTotal();
   }
-  //render total function
+// function to render total price and items
   function renderTotal(){
       let totalPrice = 0;
       let totalItems = 0;
@@ -112,22 +112,25 @@ const products = [
           totalItems += item.numberOfUnits;
       })
       totalInCart.innerHTML =`
-      <div class="products__total"> total : $${totalPrice}</div>
+      <div class="products__total"> Total : $${totalPrice.toLocaleString()}</div>
       <h6>${totalItems}</h6>
       `
   }
-  // function to render items to cart
+// function to render items to cart
   function renderCartItems(){
     cartItems.innerHTML = "";//clears items
       cart.forEach((item)=>{
           cartItems.innerHTML += `
             <div class="products__row">
+                <div class="products__delete" onclick="removeItem(${item.id})">
+                <img id="products__delete" src="./assets/images/delete.png" alt="">
+                </div>
                 <div class="products__row__quantity">
                     <div class="minusButton" onclick="changeUnits('minus',${item.id})">-</div>
                     <div class="qNumber">${item.numberOfUnits}</div>
                     <div class="plusButton" onclick="changeUnits('plus',${item.id})">+</div>
                 </div>
-                <div class="products__row__item" onclick="removeItem(${item.id})">
+                <div class="products__row__item">
                     <img id="itemImage" src="${item.imgSrc}" alt="${item.name}">
                 </div>
                 <div class="products__row__price">$${item.price}</div>
@@ -136,7 +139,7 @@ const products = [
       })
   }
 
-    //function to remove items from cart
+//function to remove items from cart
     function removeItem(id) {
        cart = cart.filter((item) => item.id !==id);       
 
